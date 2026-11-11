@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Kambale Muthabayiro Timothée - UAC</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#111}
+header{background:#0b5cff;color:white;text-align:center;padding:40px 20px}
+header h1{margin:0;font-size:28px}
+section{max-width:850px;margin:20px auto;background:white;border-radius:12px;padding:25px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+section h2{color:#0b5cff;margin-top:0}
+.galerie{display:grid;grid-template-columns:1fr;gap:20px}
+.carte{background:#f4f6f8;border-radius:12px;padding:15px}
+.carte img{width:100%;border-radius:10px;cursor:pointer}
+.carte img:hover{opacity:0.85}
+.carte h3{margin:10px 0 5px}
+.carte p{margin:0;color:#555;font-size:14px;line-height:1.5}
+.skills span{display:inline-block;background:#0b5cff;color:white;padding:8px 14px;border-radius:20px;margin:5px;font-size:14px}
+footer{text-align:center;padding:20px;color:#666;font-size:13px}
+/* Lightbox - image en grand */
+#lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:999;justify-content:center;align-items:center;flex-direction:column}
+#lightbox img{max-width:95%;max-height:80%;border-radius:10px}
+#lightbox p{color:white;margin-top:10px;font-size:16px;text-align:center;padding:0 20px}
+#fermer{position:absolute;top:15px;right:25px;color:white;font-size:35px;cursor:pointer;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>Kambale Muthabayiro Timothée</h1>
+<p>Étudiant en L3 IAGE - UAC - TP Cloudinary</p>
+<p>Mon Université en images - Cliquez sur une image pour l'agrandir</p>
+</header>
+
+<section>
+<h2>À propos de moi</h2>
+<p>Je m'appelle Kambale Muthabayiro Timothée, étudiant en L3 IAGE à l'Université de l'Assomption au Congo (UAC).</p>
+<p>Ce site présente mon université avec des images hébergées sur Cloudinary.</p>
+</section>
+
+<section>
+<h2>Ma Galerie - Mon Université UAC</h2>
+<div class="galerie">
+
+<div class="carte">
+<img src="https://res.cloudinary.com/ygzzsobf/image/upload/v1794400601/Screenshot_20261111-142834.png.jpg" onclick="ouvrir(this.src,'1. Le Rectorat de l\'UAC')">
+<h3>1. Le Rectorat de l'UAC</h3>
+<p>Le bâtiment du Rectorat de l'Université de l'Assomption au Congo à Butembo. C'est le cœur de l'administration de l'université. Devise : Noverim Me, Noverim Te.</p>
+</div>
+
+<div class="carte">
+<img src="https://res.cloudinary.com/ygzzsobf/image/upload/v1794401205/Screenshot_20261111-142956.png.jpg" onclick="ouvrir(this.src,'2. Bienvenue à l\'UAC')">
+<h3>2. Bienvenue à l'UAC</h3>
+<p>Bienvenue à l'Université de l'Assomption au Congo. Notre formation est assurée avec un laboratoire informatique, une bibliothèque numérique, et des terrains de pratiques professionnelles.</p>
+</div>
+
+<div class="carte">
+<img src="https://res.cloudinary.com/ygzzsobf/image/upload/v1794401206/Screenshot_20261111-142854.png.jpg" onclick="ouvrir(this.src,'3. Inscriptions Spéciales 2026-2027')">
+<h3>3. Inscriptions Spéciales 2026-2027</h3>
+<p>L'UAC lance les inscriptions
